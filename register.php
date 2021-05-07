@@ -52,14 +52,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="card card1">
                 <div class="row justify-content-center my-auto">
                     <form method="POST" action="register.php" class="col-md-8 col-10 my-5">
-                        <div class="row justify-content-center px-3 mb-3"> <img id="logo" src="https://i.imgur.com/PSXxjNY.png"> </div>
                         <h3 class="mb-5 text-center heading">We are Medicine</h3>
                         <h6 class="msg-info">Please create to your account</h6>
                         <div class="form-group"> <label class="form-control-label text-muted">Username</label> <input type="text" id="username" name="username" placeholder="Username" class="form-control"> </div>
                         <div class="form-group"> <label class="form-control-label text-muted">Email</label> <input type="email" id="email" name="email" placeholder="Email" class="form-control"> </div>
                         <div class="form-group"> <label class="form-control-label text-muted">Password</label> <input type="password" id="psw" name="psw" placeholder="Password" class="form-control"> </div>
                         <div class="row justify-content-center my-3 px-3"> <button type="submit" class="btn-block btn-color">Login to Medicine</button> </div>
-                        <div class="row justify-content-center my-2"> <a href="#"><small class="text-muted">Forgot Password?</small></a> </div>
                     </form>
                 </div>
                 <div class="bottom text-center mb-5">
@@ -82,7 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         color: #000;
         overflow-x: hidden;
         height: 100vh;
-        background-image: linear-gradient(to right, #D500F9, #FFD54F);
+        background: lightgray;
         background-repeat: no-repeat;
         display: grid;
         place-items: center;
@@ -167,8 +165,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     .btn-color {
         border-radius: 50px;
-        color: #fff;
-        background-image: linear-gradient(to right, #FFD54F, #D500F9);
+        color: black;
+        background: white;
         padding: 15px;
         cursor: pointer;
         border: none !important;
@@ -177,7 +175,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     .btn-color:hover {
         color: #fff;
-        background-image: linear-gradient(to right, #D500F9, #FFD54F)
+        background: gray;
     }
 
     .btn-white {
